@@ -1,16 +1,11 @@
-public class LinearSearch {
-    public static void main(String[] args) {
-        int[] arr={1,5,2,3,4};
-        int target=8;
-        System.out.println(linear(arr,target,0));
+// Linear Search using Recursion
 
-    }
-    static boolean linear(int[] arr,int target,int index){
+static boolean linear(int[] arr,int target,int index){
         if(index==arr.length-1){
             return false;
         }
         return arr[index]==target || linear(arr,target,index+1);
     }
 
-}
+
 
