@@ -1,0 +1,12 @@
+// This method will give wheather given input is Palindrome or not !
+static boolean ispalindrome(String name){
+        name=name.toLowerCase();
+        for(int i=0;i<name.length()-1;i++){
+            char start=name.charAt(i);
+            char end=name.charAt(name.length()-1-i);
+            if(start!=end){
+                return false;
+            }
+        }
+        return true;
+    }
