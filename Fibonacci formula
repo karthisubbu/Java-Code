@@ -1,13 +1,4 @@
 // We can find fibonacci number using this formula
-// This code will give upto 10 fibonacci numbers
-public class Fibonacci {
-    public static void main(String[] args) {
-        for (int i=1;i<11;i++){
-            System.out.println(fiboFormula(i));
-        }
-
-    }
     static int fiboFormula(int n){
         return (int)(Math.pow(((1+Math.sqrt(5))/2),n)/Math.sqrt(5));
     }
-}
